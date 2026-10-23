@@ -137,6 +137,22 @@ Cada corrida deja en `jmeter/resultados/<nombre>/`:
 - `reporte/index.html` — dashboard de JMeter con percentiles y gráficas (listo para capturas)
 - `resumen.txt` — veredicto contra los requisitos
 
+### Escenario 3 · lanzamiento
+
+`ElectroShop_Lanzamiento.jmx` es el mismo plan con el grupo A desactivado y el B activado
+(demanda concentrada en `productos_lanzamiento` SKU). Los `.bat`/`.sh` usan siempre el plan
+principal, así que esta variante se corre directo con JMeter:
+
+```bash
+cd jmeter
+jmeter -n -t ElectroShop_Lanzamiento.jmx -l resultados/e3/resultados.jtl -e -o resultados/e3/reporte \
+  -Jjmeter.save.saveservice.output_format=csv -Jjmeter.save.saveservice.print_field_names=true
+python3 analizar_resultados.py resultados/e3/resultados.jtl
+```
+
+Para el lanzamiento extremo (`-Jproductos_lanzamiento=5` o `=1`), aplicar antes
+`lanzamiento_stock.sql`: sin él, el stock de esos SKU se agota a mitad de la corrida.
+
 ### Analizar y comparar
 
 ```bash
