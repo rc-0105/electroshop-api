@@ -20,6 +20,7 @@ import co.edu.unbosque.electroshop.repository.ProductoRepository;
 import co.edu.unbosque.electroshop.service.MetricasPedido.Fase;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -45,6 +46,7 @@ public class PedidoService {
     private final OrdenPreparacionRepository ordenRepository;
     private final PasarelaPagoSimulada pasarela;
     private final MetricasPedido metricas;
+    private final TransactionTemplate transaccion;
 
     public PedidoService(ClienteRepository clienteRepository,
                          ProductoRepository productoRepository,
@@ -52,7 +54,8 @@ public class PedidoService {
                          PagoRepository pagoRepository,
                          OrdenPreparacionRepository ordenRepository,
                          PasarelaPagoSimulada pasarela,
-                         MetricasPedido metricas) {
+                         MetricasPedido metricas,
+                         TransactionTemplate transaccion) {
         this.clienteRepository = clienteRepository;
         this.productoRepository = productoRepository;
         this.pedidoRepository = pedidoRepository;
@@ -60,26 +63,58 @@ public class PedidoService {
         this.ordenRepository = ordenRepository;
         this.pasarela = pasarela;
         this.metricas = metricas;
+        this.transaccion = transaccion;
     }
 
     /**
-     * Valida el pedido, reserva el inventario, cobra y genera la orden de preparación,
-     * todo dentro de una única transacción: si el pago se rechaza, el stock reservado
-     * se devuelve con el rollback.
+     * Valida el pedido, reserva el inventario, cobra y genera la orden de preparación.
+     *
+     * Táctica 2: el pago queda FUERA de toda transacción. La reserva se confirma en una
+     * transacción corta (pedido en PENDIENTE_PAGO) que libera los bloqueos de inventario y
+     * la conexión antes de llamar a la pasarela; el resultado del pago se registra en una
+     * segunda transacción. Si el pago se rechaza, esa segunda transacción compensa: devuelve
+     * el stock y cancela el pedido.
+     *
+     * Limitación: si la aplicación cae entre ambas transacciones, el pedido queda en
+     * PENDIENTE_PAGO con stock reservado; en producción haría falta un proceso que concilie
+     * esos pedidos con la pasarela.
      */
-    @Transactional
     public PedidoProcesadoResponse procesar(ProcesarPedidoRequest solicitud) {
-        // 1. Validación
-        long inicio = System.nanoTime();
-        Cliente cliente = clienteRepository.findById(solicitud.clienteId())
-                .orElseThrow(() -> new PedidoInvalidoException(
-                        "El cliente " + solicitud.clienteId() + " no existe"));
-
         // Une líneas repetidas del mismo SKU y las ordena: bloquear siempre en el mismo
         // orden evita interbloqueos entre pedidos que comparten productos.
         Map<String, Integer> unidadesPorSku = solicitud.items().stream()
                 .collect(Collectors.toMap(item -> item.sku().trim(),
                         ProcesarPedidoRequest.Item::cantidad, Integer::sum, TreeMap::new));
+
+        // 1 y 2. Validación y reserva de inventario (transacción corta)
+        Pedido pedido = transaccion.execute(estado -> reservar(solicitud, unidadesPorSku));
+
+        // 3. Pago, sin transacción: no retiene bloqueos ni una conexión del pool
+        long inicio = System.nanoTime();
+        PasarelaPagoSimulada.ResultadoPago resultado;
+        try {
+            resultado = pasarela.cobrar(pedido.getTotal(), solicitud.metodoPago());
+        } catch (RuntimeException e) {
+            transaccion.executeWithoutResult(estado -> compensar(pedido.getId(), unidadesPorSku));
+            throw e;
+        }
+        if (!resultado.aprobado()) {
+            transaccion.executeWithoutResult(estado -> compensar(pedido.getId(), unidadesPorSku));
+            throw new PagoRechazadoException(resultado.motivo());
+        }
+
+        // 3 y 4. Registro del pago y orden de preparación (segunda transacción corta)
+        long inicioPago = inicio;
+        return transaccion.execute(estado -> confirmar(pedido.getId(), pedido.getCliente(),
+                solicitud, resultado, inicioPago));
+    }
+
+    private Pedido reservar(ProcesarPedidoRequest solicitud, Map<String, Integer> unidadesPorSku) {
+        // 1. Validación
+        long inicio = System.nanoTime();
+        Cliente cliente = clienteRepository.findById(solicitud.clienteId())
+                .orElseThrow(() -> new PedidoInvalidoException(
+                        "El cliente " + solicitud.clienteId() + " no existe"));
         metricas.registrar(Fase.VALIDACION, inicio);
 
         // 2. Reserva de inventario
@@ -102,20 +137,19 @@ public class PedidoService {
         }
         pedidoRepository.save(pedido);
         metricas.registrar(Fase.RESERVA_INVENTARIO, inicio);
+        return pedido;
+    }
 
-        // 3. Pago
-        inicio = System.nanoTime();
-        PasarelaPagoSimulada.ResultadoPago resultado = pasarela.cobrar(pedido.getTotal(), solicitud.metodoPago());
-        if (!resultado.aprobado()) {
-            throw new PagoRechazadoException(resultado.motivo());   // rollback: libera el stock
-        }
+    private PedidoProcesadoResponse confirmar(Long pedidoId, Cliente cliente, ProcesarPedidoRequest solicitud,
+                                              PasarelaPagoSimulada.ResultadoPago resultado, long inicioPago) {
+        Pedido pedido = pedidoRepository.getReferenceById(pedidoId);
         Pago pago = pagoRepository.save(new Pago(pedido, pedido.getTotal(), solicitud.metodoPago(),
                 "APROBADO", resultado.referencia()));
         pedido.confirmar();
-        metricas.registrar(Fase.PAGO, inicio);
+        metricas.registrar(Fase.PAGO, inicioPago);
 
         // 4. Orden de preparación
-        inicio = System.nanoTime();
+        long inicio = System.nanoTime();
         String bodega = asignarBodega(cliente.getCiudad());
         String prioridad = pedido.getTotal().compareTo(UMBRAL_PRIORIDAD_ALTA) >= 0 ? "ALTA" : "NORMAL";
         OrdenPreparacion orden = ordenRepository.save(new OrdenPreparacion(pedido, bodega, prioridad));
@@ -123,6 +157,15 @@ public class PedidoService {
 
         return new PedidoProcesadoResponse(pedido.getId(), pedido.getEstado(), pedido.getTotal(),
                 pago.getReferencia(), orden.getId(), bodega, pedido.getFecha());
+    }
+
+    /** Pago rechazado: devuelve el stock reservado (en el mismo orden de SKU) y cancela el pedido. */
+    private void compensar(Long pedidoId, Map<String, Integer> unidadesPorSku) {
+        for (Map.Entry<String, Integer> linea : unidadesPorSku.entrySet()) {
+            productoRepository.buscarPorSkuParaReserva(linea.getKey())
+                    .ifPresent(producto -> producto.liberar(linea.getValue()));
+        }
+        pedidoRepository.getReferenceById(pedidoId).cancelar();
     }
 
     /**

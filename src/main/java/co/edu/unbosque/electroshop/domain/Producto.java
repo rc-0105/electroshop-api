@@ -46,6 +46,11 @@ public class Producto {
         this.stock -= cantidad;
     }
 
+    /** Devuelve unidades reservadas (pago rechazado). Quien llama debe tener el bloqueo de la fila. */
+    public void liberar(int cantidad) {
+        this.stock += cantidad;
+    }
+
     public Long getId() { return id; }
     public String getSku() { return sku; }
     public String getNombre() { return nombre; }

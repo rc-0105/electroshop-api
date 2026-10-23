@@ -67,6 +67,10 @@ public class Pedido {
         this.estado = EstadoPedido.CONFIRMADO;
     }
 
+    public void cancelar() {
+        this.estado = EstadoPedido.CANCELADO;
+    }
+
     public Long getId() { return id; }
     public Cliente getCliente() { return cliente; }
     public LocalDateTime getFecha() { return fecha; }
