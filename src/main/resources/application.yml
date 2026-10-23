@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: electroshop-api
+
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/electroshop?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=America/Bogota
+    username: ${DB_USER:electroshop}
+    password: ${DB_PASSWORD:electroshop}
+    hikari:
+      # Valor por defecto de HikariCP, explícito para poder citarlo en el informe.
+      maximum-pool-size: 10
+      connection-timeout: 30000
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none            # el esquema lo crea db/01_schema.sql
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+electroshop:
+  pago:
+    latencia-ms: 30             # latencia simulada de la pasarela externa
+    tasa-rechazo: 0.0           # 0.0 = todos los pagos se aprueban (prueba de carga limpia)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  metrics:
+    distribution:
+      percentiles:
+        http.server.requests: 0.5, 0.95, 0.99
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+
+logging:
+  level:
+    root: INFO
+    # Para ver las consultas que genera cada petición (NO dejar activo durante la prueba de carga):
+    # org.hibernate.SQL: DEBUG
