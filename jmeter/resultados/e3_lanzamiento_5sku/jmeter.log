@@ -1,0 +1,315 @@
+2026-10-22 22:24:21,024 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-10-22 22:24:21,037 INFO o.a.j.JMeter: Loading user properties from: C:\Users\Ricardo\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-10-22 22:24:21,037 INFO o.a.j.JMeter: Loading system properties from: C:\Users\Ricardo\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-10-22 22:24:21,038 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.output_format=csv
+2026-10-22 22:24:21,038 INFO o.a.j.JMeter: Setting JMeter property: jmeter.save.saveservice.print_field_names=true
+2026-10-22 22:24:21,038 INFO o.a.j.JMeter: Setting JMeter property: productos_lanzamiento=5
+2026-10-22 22:24:21,044 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-10-22 22:24:21,044 INFO o.a.j.JMeter: Version 5.6.3
+2026-10-22 22:24:21,044 INFO o.a.j.JMeter: java.version=21.0.8
+2026-10-22 22:24:21,044 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: os.name=Windows 10
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: os.arch=amd64
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: os.version=10.0
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: java.awt.headless=true
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-10-22 22:24:21,045 INFO o.a.j.JMeter: Available Processors =16
+2026-10-22 22:24:21,051 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-10-22 22:24:21,051 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-10-22 22:24:21,051 INFO o.a.j.JMeter: JMeterHome=C:\Users\Ricardo\tools\apache-jmeter-5.6.3
+2026-10-22 22:24:21,052 INFO o.a.j.JMeter: user.dir  =C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter
+2026-10-22 22:24:21,052 INFO o.a.j.JMeter: PWD       =C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter
+2026-10-22 22:24:25,687 INFO o.a.j.JMeter: IP: 26.96.230.135 Name: DESKTOP-GRCBFDC FullName: DESKTOP-GRCBFDC
+2026-10-22 22:24:25,694 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte'
+2026-10-22 22:24:25,699 INFO o.a.j.s.FileServer: Default base='C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter'
+2026-10-22 22:24:25,701 INFO o.a.j.s.FileServer: Set new base='C:\Users\Ricardo\AppData\Local\Temp\claude\C--Users-Ricardo-Desktop-tallersoftware\34e27079-48bc-40f0-aa89-1df356359988\scratchpad'
+2026-10-22 22:24:25,836 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-10-22 22:24:25,863 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-10-22 22:24:25,866 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-10-22 22:24:25,868 INFO o.a.j.s.SaveService: Loading file: C:\Users\Ricardo\AppData\Local\Temp\claude\C--Users-Ricardo-Desktop-tallersoftware\34e27079-48bc-40f0-aa89-1df356359988\scratchpad\ElectroShop_Lanzamiento.jmx
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-10-22 22:24:25,915 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-10-22 22:24:25,944 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-10-22 22:24:25,946 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2026-10-22 22:24:25,947 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: resultados\e3_lanzamiento_5sku\resultados.jtl
+2026-10-22 22:24:25,947 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: C:\Users\Ricardo\tools\apache-jmeter-5.6.3\bin\reportgenerator.properties
+2026-10-22 22:24:25,947 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2026-10-22 22:24:25,950 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction is empty, not APDEX per transaction customization
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2026-10-22 22:24:25,952 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2026-10-22 22:24:25,953 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2026-10-22 22:24:25,954 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,955 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,956 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2026-10-22 22:24:25,956 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2026-10-22 22:24:25,956 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2026-10-22 22:24:25,956 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2026-10-22 22:24:25,957 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2026-10-22 22:24:25,957 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2026-10-22 22:24:25,957 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2026-10-22 22:24:25,964 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-10-22 22:24:25,965 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-22 22:24:25,965 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-10-22 22:24:25,968 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-10-22 22:24:25,968 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-10-22 22:24:26,020 INFO o.a.j.JMeter: Running test (1792725866020)
+2026-10-22 22:24:26,021 INFO o.a.j.e.StandardJMeterEngine: Starting setUp thread groups
+2026-10-22 22:24:26,022 INFO o.a.j.e.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : 0 · Verificación previa (1 petición por endpoint) 
+2026-10-22 22:24:26,022 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group 0 · Verificación previa (1 petición por endpoint).
+2026-10-22 22:24:26,022 INFO o.a.j.e.StandardJMeterEngine: Test will stop abruptly on error
+2026-10-22 22:24:26,022 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=1 delayedStart=false
+2026-10-22 22:24:26,024 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-22 22:24:26,024 INFO o.a.j.e.StandardJMeterEngine: Waiting for all setup thread groups to exit
+2026-10-22 22:24:26,025 INFO o.a.j.t.JMeterThread: Thread started: 0 · Verificación previa (1 petición por endpoint) 1-1
+2026-10-22 22:24:26,035 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-GRCBFDC
+2026-10-22 22:24:26,039 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-10-22 22:24:26,040 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-10-22 22:24:26,040 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-10-22 22:24:26,040 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-10-22 22:24:26,040 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-10-22 22:24:26,426 INFO o.a.j.t.JMeterThread: Thread is done: 0 · Verificación previa (1 petición por endpoint) 1-1
+2026-10-22 22:24:26,426 INFO o.a.j.t.JMeterThread: Thread finished: 0 · Verificación previa (1 petición por endpoint) 1-1
+2026-10-22 22:24:26,427 INFO o.a.j.e.StandardJMeterEngine: All Setup Threads have ended
+2026-10-22 22:24:26,435 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : B · Pedidos de lanzamiento (alternativo a A)
+2026-10-22 22:24:26,435 INFO o.a.j.e.StandardJMeterEngine: Starting 40 threads for group B · Pedidos de lanzamiento (alternativo a A).
+2026-10-22 22:24:26,435 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-22 22:24:26,435 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=40 ramp-up=30 delayedStart=false
+2026-10-22 22:24:26,436 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-1
+2026-10-22 22:24:26,446 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-10-22 22:24:26,446 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : C · Consultas de detalle (3.000/min)
+2026-10-22 22:24:26,447 INFO o.a.j.e.StandardJMeterEngine: Starting 30 threads for group C · Consultas de detalle (3.000/min).
+2026-10-22 22:24:26,447 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-10-22 22:24:26,447 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=30 ramp-up=30 delayedStart=false
+2026-10-22 22:24:26,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-1
+2026-10-22 22:24:26,454 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2026-10-22 22:24:26,454 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-10-22 22:24:27,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-2
+2026-10-22 22:24:27,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-2
+2026-10-22 22:24:27,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-3
+2026-10-22 22:24:28,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-3
+2026-10-22 22:24:28,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-4
+2026-10-22 22:24:29,436 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-5
+2026-10-22 22:24:29,449 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-4
+2026-10-22 22:24:30,020 INFO o.a.j.r.Summariser: summary +    264 in 00:00:04 =   66.0/s Avg:    27 Min:     7 Max:   175 Err:     0 (0.00%) Active: 9 Started: 9 Finished: 0
+2026-10-22 22:24:30,185 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-6
+2026-10-22 22:24:30,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-5
+2026-10-22 22:24:30,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-7
+2026-10-22 22:24:31,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-6
+2026-10-22 22:24:31,687 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-8
+2026-10-22 22:24:32,435 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-9
+2026-10-22 22:24:32,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-7
+2026-10-22 22:24:33,185 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-10
+2026-10-22 22:24:33,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-8
+2026-10-22 22:24:33,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-11
+2026-10-22 22:24:34,449 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-9
+2026-10-22 22:24:34,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-12
+2026-10-22 22:24:35,435 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-13
+2026-10-22 22:24:35,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-10
+2026-10-22 22:24:36,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-14
+2026-10-22 22:24:36,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-11
+2026-10-22 22:24:36,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-15
+2026-10-22 22:24:37,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-12
+2026-10-22 22:24:37,685 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-16
+2026-10-22 22:24:38,436 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-17
+2026-10-22 22:24:38,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-13
+2026-10-22 22:24:39,185 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-18
+2026-10-22 22:24:39,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-14
+2026-10-22 22:24:39,937 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-19
+2026-10-22 22:24:40,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-15
+2026-10-22 22:24:40,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-20
+2026-10-22 22:24:41,435 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-21
+2026-10-22 22:24:41,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-16
+2026-10-22 22:24:42,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-22
+2026-10-22 22:24:42,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-17
+2026-10-22 22:24:42,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-23
+2026-10-22 22:24:43,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-18
+2026-10-22 22:24:43,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-24
+2026-10-22 22:24:44,436 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-25
+2026-10-22 22:24:44,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-19
+2026-10-22 22:24:45,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-26
+2026-10-22 22:24:45,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-20
+2026-10-22 22:24:45,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-27
+2026-10-22 22:24:46,449 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-21
+2026-10-22 22:24:46,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-28
+2026-10-22 22:24:47,436 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-29
+2026-10-22 22:24:47,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-22
+2026-10-22 22:24:48,187 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-30
+2026-10-22 22:24:48,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-23
+2026-10-22 22:24:48,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-31
+2026-10-22 22:24:49,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-24
+2026-10-22 22:24:49,686 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-32
+2026-10-22 22:24:50,437 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-33
+2026-10-22 22:24:50,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-25
+2026-10-22 22:24:51,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-34
+2026-10-22 22:24:51,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-26
+2026-10-22 22:24:51,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-35
+2026-10-22 22:24:52,447 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-27
+2026-10-22 22:24:52,685 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-36
+2026-10-22 22:24:53,437 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-37
+2026-10-22 22:24:53,449 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-28
+2026-10-22 22:24:54,186 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-38
+2026-10-22 22:24:54,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-29
+2026-10-22 22:24:54,936 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-39
+2026-10-22 22:24:55,448 INFO o.a.j.t.JMeterThread: Thread started: C · Consultas de detalle (3.000/min) 2-30
+2026-10-22 22:24:55,685 INFO o.a.j.t.JMeterThread: Thread started: B · Pedidos de lanzamiento (alternativo a A) 1-40
+2026-10-22 22:25:00,017 INFO o.a.j.r.Summariser: summary +   2304 in 00:00:30 =   76.8/s Avg:    27 Min:     4 Max:   204 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:25:00,017 INFO o.a.j.r.Summariser: summary =   2568 in 00:00:34 =   75.5/s Avg:    27 Min:     4 Max:   204 Err:     0 (0.00%)
+2026-10-22 22:25:30,016 INFO o.a.j.r.Summariser: summary +   2247 in 00:00:30 =   74.9/s Avg:    25 Min:     4 Max:   248 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:25:30,016 INFO o.a.j.r.Summariser: summary =   4815 in 00:01:04 =   75.2/s Avg:    26 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:26:00,010 INFO o.a.j.r.Summariser: summary +   2253 in 00:00:30 =   75.1/s Avg:    25 Min:     4 Max:   246 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:26:00,010 INFO o.a.j.r.Summariser: summary =   7068 in 00:01:34 =   75.2/s Avg:    26 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:26:30,014 INFO o.a.j.r.Summariser: summary +   2252 in 00:00:30 =   75.1/s Avg:    25 Min:     4 Max:   205 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:26:30,014 INFO o.a.j.r.Summariser: summary =   9320 in 00:02:04 =   75.2/s Avg:    26 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:27:00,015 INFO o.a.j.r.Summariser: summary +   2248 in 00:00:30 =   74.9/s Avg:    25 Min:     4 Max:   206 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:27:00,015 INFO o.a.j.r.Summariser: summary =  11568 in 00:02:34 =   75.1/s Avg:    25 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:27:30,011 INFO o.a.j.r.Summariser: summary +   2247 in 00:00:30 =   74.9/s Avg:    24 Min:     4 Max:   205 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:27:30,012 INFO o.a.j.r.Summariser: summary =  13815 in 00:03:04 =   75.1/s Avg:    25 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:28:00,005 INFO o.a.j.r.Summariser: summary +   2253 in 00:00:30 =   75.1/s Avg:    25 Min:     4 Max:   224 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:28:00,005 INFO o.a.j.r.Summariser: summary =  16068 in 00:03:34 =   75.1/s Avg:    25 Min:     4 Max:   248 Err:     0 (0.00%)
+2026-10-22 22:28:30,014 INFO o.a.j.r.Summariser: summary +   2252 in 00:00:30 =   75.0/s Avg:    25 Min:     4 Max:   319 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:28:30,014 INFO o.a.j.r.Summariser: summary =  18320 in 00:04:04 =   75.1/s Avg:    25 Min:     4 Max:   319 Err:     0 (0.00%)
+2026-10-22 22:29:00,013 INFO o.a.j.r.Summariser: summary +   2249 in 00:00:30 =   75.0/s Avg:    25 Min:     4 Max:   368 Err:     0 (0.00%) Active: 70 Started: 70 Finished: 0
+2026-10-22 22:29:00,013 INFO o.a.j.r.Summariser: summary =  20569 in 00:04:34 =   75.1/s Avg:    25 Min:     4 Max:   368 Err:     0 (0.00%)
+2026-10-22 22:29:24,932 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-33
+2026-10-22 22:29:25,023 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-27
+2026-10-22 22:29:25,116 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-22
+2026-10-22 22:29:25,148 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-35
+2026-10-22 22:29:25,163 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-30
+2026-10-22 22:29:25,266 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-21
+2026-10-22 22:29:25,322 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-18
+2026-10-22 22:29:25,337 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-20
+2026-10-22 22:29:25,340 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-37
+2026-10-22 22:29:25,354 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-39
+2026-10-22 22:29:25,367 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-6
+2026-10-22 22:29:25,400 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-12
+2026-10-22 22:29:25,417 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-14
+2026-10-22 22:29:25,474 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-26
+2026-10-22 22:29:25,549 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-11
+2026-10-22 22:29:25,595 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-32
+2026-10-22 22:29:25,644 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-7
+2026-10-22 22:29:25,647 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-9
+2026-10-22 22:29:25,690 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-29
+2026-10-22 22:29:25,694 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-5
+2026-10-22 22:29:25,752 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-3
+2026-10-22 22:29:25,755 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-10
+2026-10-22 22:29:25,799 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-15
+2026-10-22 22:29:25,812 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-4
+2026-10-22 22:29:25,875 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-21
+2026-10-22 22:29:25,894 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-18
+2026-10-22 22:29:25,914 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-17
+2026-10-22 22:29:25,935 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-4
+2026-10-22 22:29:25,967 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-13
+2026-10-22 22:29:25,994 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-10
+2026-10-22 22:29:25,995 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-11
+2026-10-22 22:29:26,013 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-36
+2026-10-22 22:29:26,014 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-3
+2026-10-22 22:29:26,014 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-2
+2026-10-22 22:29:26,016 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-1
+2026-10-22 22:29:26,055 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-30
+2026-10-22 22:29:26,075 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-22
+2026-10-22 22:29:26,114 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-20
+2026-10-22 22:29:26,134 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-15
+2026-10-22 22:29:26,136 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-40
+2026-10-22 22:29:26,151 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-38
+2026-10-22 22:29:26,153 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-9
+2026-10-22 22:29:26,174 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-5
+2026-10-22 22:29:26,174 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-6
+2026-10-22 22:29:26,214 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-29
+2026-10-22 22:29:26,216 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-16
+2026-10-22 22:29:26,229 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-31
+2026-10-22 22:29:26,239 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-23
+2026-10-22 22:29:26,257 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-12
+2026-10-22 22:29:26,259 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-24
+2026-10-22 22:29:26,293 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-19
+2026-10-22 22:29:26,314 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-8
+2026-10-22 22:29:26,318 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-28
+2026-10-22 22:29:26,340 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-28
+2026-10-22 22:29:26,353 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-16
+2026-10-22 22:29:26,353 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-24
+2026-10-22 22:29:26,375 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-14
+2026-10-22 22:29:26,413 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-27
+2026-10-22 22:29:26,421 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-17
+2026-10-22 22:29:26,450 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-2
+2026-10-22 22:29:26,450 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-2
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: C · Consultas de detalle (3.000/min) 2-7
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-7
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: C · Consultas de detalle (3.000/min) 2-26
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: C · Consultas de detalle (3.000/min) 2-13
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-26
+2026-10-22 22:29:26,455 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-13
+2026-10-22 22:29:26,456 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: C · Consultas de detalle (3.000/min) 2-25
+2026-10-22 22:29:26,456 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: C · Consultas de detalle (3.000/min) 2-8
+2026-10-22 22:29:26,456 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-25
+2026-10-22 22:29:26,456 INFO o.a.j.t.JMeterThread: Thread finished: C · Consultas de detalle (3.000/min) 2-8
+2026-10-22 22:29:26,476 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-23
+2026-10-22 22:29:26,476 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-23
+2026-10-22 22:29:26,479 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-19
+2026-10-22 22:29:26,479 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-19
+2026-10-22 22:29:26,489 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-1
+2026-10-22 22:29:26,490 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-1
+2026-10-22 22:29:26,505 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-25
+2026-10-22 22:29:26,505 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-25
+2026-10-22 22:29:26,520 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: B · Pedidos de lanzamiento (alternativo a A) 1-34
+2026-10-22 22:29:26,520 INFO o.a.j.t.JMeterThread: Thread finished: B · Pedidos de lanzamiento (alternativo a A) 1-34
+2026-10-22 22:29:26,520 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-10-22 22:29:26,521 INFO o.a.j.r.Summariser: summary +   1991 in 00:00:27 =   75.1/s Avg:    25 Min:     4 Max:   200 Err:     0 (0.00%) Active: 0 Started: 70 Finished: 70
+2026-10-22 22:29:26,521 INFO o.a.j.r.Summariser: summary =  22560 in 00:05:01 =   75.1/s Avg:    25 Min:     4 Max:   368 Err:     0 (0.00%)
+2026-10-22 22:29:26,521 INFO o.a.j.JMeter: Generating Dashboard
+2026-10-22 22:29:26,521 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2026-10-22 22:29:26,534 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2026-10-22 22:29:27,018 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2026-10-22 22:29:27,018 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2026-10-22 22:29:27,027 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2026-10-22 22:29:27,027 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2026-10-22 22:29:27,047 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2026-10-22 22:29:27,050 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2026-10-22 22:29:27,050 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2026-10-22 22:29:27,050 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2026-10-22 22:29:27,239 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2026-10-22 22:29:27,240 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2026-10-22 22:29:27,240 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2026-10-22 22:29:27,241 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2026-10-22 22:29:27,306 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2026-10-22 22:29:27,307 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 157920 samples
+2026-10-22 22:29:27,307 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2026-10-22 22:29:27,307 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2026-10-22 22:29:27,307 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2026-10-22 22:29:27,307 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2026-10-22 22:29:27,308 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2026-10-22 22:29:27,308 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2026-10-22 22:29:27,310 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2026-10-22 22:29:27,312 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2026-10-22 22:29:27,312 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2026-10-22 22:29:27,313 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2026-10-22 22:29:27,313 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 338400 samples
+2026-10-22 22:29:27,313 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 67680 samples
+2026-10-22 22:29:27,313 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 22560 samples
+2026-10-22 22:29:27,313 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 22560 samples produced in 765ms on channel 0
+2026-10-22 22:29:27,313 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2026-10-22 22:29:27,361 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2026-10-22 22:29:27,361 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2026-10-22 22:29:27,361 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2026-10-22 22:29:27,361 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2026-10-22 22:29:27,362 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte\statistics.json
+2026-10-22 22:29:27,397 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2026-10-22 22:29:27,399 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte
+2026-10-22 22:29:27,512 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte, creating folder structure
+2026-10-22 22:29:27,513 INFO o.a.j.r.d.TemplateVisitor: Copying folder from 'C:\Users\Ricardo\tools\apache-jmeter-5.6.3\bin\report-template' to 'C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte', got message: C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte, found non empty folder with following content [C:\Users\Ricardo\Desktop\tallersoftware\electroshop-api\jmeter\resultados\e3_lanzamiento_5sku\reporte\statistics.json], will be ignored
+2026-10-22 22:29:27,709 INFO o.a.j.JMeter: Dashboard generated

@@ -3,6 +3,6 @@ target/
 *.iml
 .vscode/
 .DS_Store
-jmeter/resultados/
 jmeter.log
-*.jtl
+!jmeter/resultados/**/jmeter.log
+# Los resultados de las corridas (jmeter/resultados/) se versionan como evidencia del informe

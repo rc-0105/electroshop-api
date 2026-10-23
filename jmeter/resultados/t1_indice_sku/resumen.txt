@@ -1,0 +1,11 @@
+
+## resultados/t1_indice_sku/resultados.jtl  (ventana analizada: 240 s)
+
+Endpoint                       Muestras  Por min  Errores %  Promedio  p50  p90  p95  p99  Máx  Veredicto
+-----------------------------  --------  -------  ---------  --------  ---  ---  ---  ---  ---  ---------
+GET /api/pedidos/detalle/{id}  12003     3001     0.00       5.9       6    7    8    11   43   CUMPLE   
+POST /api/pedidos/procesar     6005      1501     0.00       54.8      54   62   65   75   110  CUMPLE   
+
+Tiempos en ms. Percentil por rango más cercano. Estadístico de decisión: p95.
+  GET /api/pedidos/detalle/{id}: entre 3000 y 3000 peticiones por minuto completo
+  POST /api/pedidos/procesar: entre 1496 y 1504 peticiones por minuto completo

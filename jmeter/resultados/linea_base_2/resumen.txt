@@ -1,0 +1,11 @@
+
+## resultados/linea_base_2/resultados.jtl  (ventana analizada: 240 s)
+
+Endpoint                       Muestras  Por min  Errores %  Promedio  p50   p90   p95   p99   Máx   Veredicto                                                     
+-----------------------------  --------  -------  ---------  --------  ----  ----  ----  ----  ----  --------------------------------------------------------------
+GET /api/pedidos/detalle/{id}  1770      443      0.00       4060.7    4062  4108  4128  4185  4238  NO CUMPLE: p95 4128 ms > 50 ms                                
+POST /api/pedidos/procesar     1831      458      0.00       5239.7    5242  5296  5322  5393  5432  NO CUMPLE: p95 5322 ms > 100 ms; carga real 458/min < 1500/min
+
+Tiempos en ms. Percentil por rango más cercano. Estadístico de decisión: p95.
+  GET /api/pedidos/detalle/{id}: entre 438 y 449 peticiones por minuto completo
+  POST /api/pedidos/procesar: entre 456 y 461 peticiones por minuto completo
