@@ -1,0 +1,11 @@
+
+## resultados/e3_lanzamiento_t2_5sku/resultados.jtl  (ventana analizada: 240 s)
+
+Endpoint                       Muestras  Por min  Errores %  Promedio  p50  p90  p95  p99  Máx  Veredicto
+-----------------------------  --------  -------  ---------  --------  ---  ---  ---  ---  ---  ---------
+GET /api/pedidos/detalle/{id}  12001     3001     0.00       5.8       6    7    7    10   149  CUMPLE   
+POST /api/pedidos/procesar     6006      1502     0.00       68.0      66   78   84   111  423  CUMPLE   
+
+Tiempos en ms. Percentil por rango más cercano. Estadístico de decisión: p95.
+  GET /api/pedidos/detalle/{id}: entre 3000 y 3000 peticiones por minuto completo
+  POST /api/pedidos/procesar: entre 1495 y 1505 peticiones por minuto completo

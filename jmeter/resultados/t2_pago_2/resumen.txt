@@ -1,0 +1,11 @@
+
+## resultados/t2_pago_2/resultados.jtl  (ventana analizada: 240 s)
+
+Endpoint                       Muestras  Por min  Errores %  Promedio  p50  p90  p95  p99  Máx  Veredicto
+-----------------------------  --------  -------  ---------  --------  ---  ---  ---  ---  ---  ---------
+GET /api/pedidos/detalle/{id}  12002     3001     0.00       5.7       6    7    7    9    28   CUMPLE   
+POST /api/pedidos/procesar     6005      1501     0.00       67.3      66   78   83   101  208  CUMPLE   
+
+Tiempos en ms. Percentil por rango más cercano. Estadístico de decisión: p95.
+  GET /api/pedidos/detalle/{id}: entre 3000 y 3000 peticiones por minuto completo
+  POST /api/pedidos/procesar: entre 1495 y 1505 peticiones por minuto completo
