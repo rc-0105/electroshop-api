@@ -1,0 +1,10 @@
+Integridad del inventario tras la corrida (2026-10-23 21:43)
+SELECT COUNT(*) FROM producto WHERE stock < 0:
+0
+Stock de los productos de lanzamiento (id <= 5):
+id	sku	stock
+1	ELEC-1	98408
+2	ELEC-2	98526
+3	ELEC-3	98492
+4	ELEC-4	98547
+5	ELEC-5	98494

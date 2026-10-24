@@ -1,0 +1,11 @@
+
+## resultados/e3_lanzamiento_t1_1sku_3/resultados.jtl  (ventana analizada: 240 s)
+
+Endpoint                       Muestras  Por min  Errores %  Promedio  p50   p90   p95   p99   Máx   Veredicto                                                      
+-----------------------------  --------  -------  ---------  --------  ----  ----  ----  ----  ----  ---------------------------------------------------------------
+GET /api/pedidos/detalle/{id}  5205      1302     0.00       1383.3    1381  1412  1425  1449  2769  NO CUMPLE: p95 1425 ms > 50 ms                                 
+POST /api/pedidos/procesar     5374      1344     0.00       1785.6    1783  1818  1826  1858  3135  NO CUMPLE: p95 1826 ms > 100 ms; carga real 1344/min < 1500/min
+
+Tiempos en ms. Percentil por rango más cercano. Estadístico de decisión: p95.
+  GET /api/pedidos/detalle/{id}: entre 1289 y 1305 peticiones por minuto completo
+  POST /api/pedidos/procesar: entre 1330 y 1348 peticiones por minuto completo
