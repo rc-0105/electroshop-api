@@ -153,6 +153,16 @@ python3 analizar_resultados.py resultados/e3/resultados.jtl
 Para el lanzamiento extremo (`-Jproductos_lanzamiento=5` o `=1`), aplicar antes
 `lanzamiento_stock.sql`: sin él, el stock de esos SKU se agota a mitad de la corrida.
 
+`corridas_escenario3.sh` automatiza el ciclo completo de cada corrida (restablecer la BD,
+arrancar la API del commit que corresponde a la táctica, correr el plan, analizar y guardar
+en `stock.txt` la verificación de stock negativo). Sin argumentos repite las corridas que
+completaron el escenario 3; con `<nombre> <base|t1|t2> <skus>` hace una sola:
+
+```bash
+cd jmeter
+./corridas_escenario3.sh e3_lanzamiento_t2_1sku_4 t2 1
+```
+
 ### Analizar y comparar
 
 ```bash
